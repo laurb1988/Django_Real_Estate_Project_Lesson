@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'NotProvided'
+SECRET_KEY = 'WillbeCreatedAtInstall'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django_realtors_db',
         'USER': 'postgre',
-        'PASSWORD': 'Laurb123@@',
+        'PASSWORD': 'yourdbpass',
         'HOST': '192.168.0.21'
     }
 }
@@ -147,8 +147,8 @@ MESSAGE_TAGS = {
 }
 
 #Email Settings
-EMAIL_HOST = 'yoursmtphost'
+EMAIL_HOST = 'yoursmtphostname'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'yourusername'
+EMAIL_HOST_USER = 'yoursmtpuser'
 EMAIL_HOST_PASSWORD = 'yourpass'
 EMAIL_USE_TLS = True
